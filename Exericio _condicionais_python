@@ -1,0 +1,43 @@
+-- Escreva um programa que solicite um número ao usuário e determine se é par ou ímpar:
+entrada = input ('Escreva um número: ')
+numero = float (entrada)
+
+if numero % 2 == 0:
+    print (f'O número {numero} é Par')
+
+else:
+    print (f'O número {numero} é Ímpar')
+
+-----------------------------------------------------------------------------------------------------------------------------
+-- Escreva um programa que solicite os comprimentos dos lados de um triângulo e determine se ele é equilátero, isósceles ou escaleno.
+triangulo_ladoA= float (input ('Informe a medida do lado A do triângulo: '))
+triangulo_ladoB= float (input ('Informe a medida do lado B do triângulo: '))
+triangulo_ladoC= float (input ('Informe a medida do lado C do triângulo: '))
+
+if triangulo_ladoA == triangulo_ladoB and triangulo_ladoA == triangulo_ladoC:
+    print('Este triângulo é do tipo Equilátero: todos os lados possuem a mesma medida.')
+
+elif triangulo_ladoA == triangulo_ladoB or triangulo_ladoA == triangulo_ladoC or triangulo_ladoB == triangulo_ladoC:
+    print('Este triângulo é do tipo Isósceles: dois lados possuem a mesma medida.')
+else:
+    print('Este triângulo é do tipo Escaleno: todos os lados possuem medidas diferentes.')
+
+-------------------------------------------------------------------------------------------------------------------------------
+/*Escreva um programa que solicite a idade de uma pessoa e imprima se ela é criança, adolescente, adulta ou idosa.
+Considere as seguintes faixas etárias:
+- Criança: até 12 anos
+- Adolescente: de 13 a 17 anos
+- Adulto: de 18 a 59 anos
+- Idoso: 60 anos ou mais*/
+
+idade = input ('Qual a sua idade? ')
+idade = int (idade)
+
+if idade <= 12:
+    print('Você é considerado uma criança!')
+elif idade >= 13 and idade <= 17:
+    print('Você é considerado um(a) adolescente!')
+elif idade >=18 and idade <=59:
+    print('Você é considerado um(a) adulto(a)!')
+else:
+    print('Você é considerado(a) idoso(a)!')
